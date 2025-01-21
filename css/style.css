@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 0;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo-img {
+  display:inline-block;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header__nav {
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
+  padding-left: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+.header__buttons {
+  display: flex;
+  gap: 10px;
+}
+.header__button {
+  border: 1px solid #fff;
+  border-radius: 27px;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.header__button--primary {
+  background-color: transparent;
+  color: #fff;
+}
+.header__button:hover {
+  background-color: #fff;
+  color:  #2961AB;
+}
+
+.hero {
+  background: url('/img/bg_header.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 180px 20px 120px;
+  position: relative;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 120%;
+  margin-bottom: 53px;
+}
+.hero__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.hero__button {
+  border-radius: 36px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 24px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.hero__button:hover {
+  background-color: #fff;
+  color:  #2961AB;
+}
+/*
+.hero__button--secondary {
+  background-color: transparent;
+  border: 1px solid #fff;
+}*/
+.section-insert {
+  position: relative;
+  padding: 112px 0px;
+  text-align: center;
+
+}
+.section-insert__content {
+  display: flex;
+  justify-content: space-between;
+
+}
+.section-white {
+  z-index: 9;
+  border-radius: 25px;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  background-color: #fff;
+}
+.section-insert__title {
+  font-weight: 700;
+  font-size: 56px;
+  color: #333;
+  flex-basis: 50%;
+  text-align: left;
+}
+.section-insert__title b {
+  color: #67B3A5;
+}
+.section-insert__description {
+  color: #555;
+  flex-basis: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: right;
+}
+
+
+.section-about {
+  background: url('/img/bg_about.jpg') no-repeat center center;
+  background-size: cover;
+
+  text-align: center;
+  padding: 90px 0px 67px;
+  position: relative;
+}
+
+.section-about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+
+
+.cards__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  flex: 1;
+
+
+
+  padding: 20px;
+
+  text-align: center;
+}
+.card__image {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.card__title b {
+  color: #67B3A5;
+}
+.card__text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.card__link {
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  cursor:pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.card__link:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 23%;
+  left: 100%;
+  background: url("/img/arrow_link.svg") no-repeat;
+  margin: 0 8px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.section__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.section__content {
+  flex: 1;
+}
+.section-cards__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section__description {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+.section__button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.section__button:hover {
+  background-color: #0056b3;
+}
+.section__image {
+  flex: 1;
+  text-align: center;
+}
+.section__image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
