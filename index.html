@@ -133,7 +133,7 @@
                     <a href="#" class="section-pricing__button section-pricing__button--secondary ">Learn More</a>
                 </div>
                 <div class="pricing-cards__content">
-                    <div class="pricing-card">
+                    <div class="pricing-card pricing-card__1">
                         <h3 class="pricing-card__title ">Basic Plan</h3>
                         <p class="pricing-card__price">$19/mo</p>
                         <ul class="pricing-card__list">
@@ -158,7 +158,7 @@
                         <button class="pricing-card__button">Get Started</button>
 
                     </div>
-                    <div class="pricing-card">
+                    <div class="pricing-card pricing-card__2">
                         <h3 class="pricing-card__title ">Premium Plan</h3>
                         <p class="pricing-card__price">$30/mo</p>
                         <ul class="pricing-card__list">
@@ -299,6 +299,7 @@
         </div>
     </footer>
     <script>
+        /*
         let currentIndex = 0;
         const images = document.querySelector('.slider-images');
         const texts = document.querySelectorAll('.slider-texts div');
@@ -331,6 +332,48 @@
         });
 
         setInterval(nextSlide, intervalTime);
+
+         */
+        let currentIndex = 0;
+        const images = document.querySelector('.slider-images');
+        const texts = document.querySelectorAll('.slider-texts div');
+        const dots = document.querySelectorAll('.dot');
+        const slideCount = texts.length;
+        const intervalTime = 10000; // 10 seconds
+
+        function updateSlider() {
+            const isMobile = window.innerWidth <= 1024; // Проверка на мобильный режим
+            const translateValue = isMobile
+                ? `translateX(-${currentIndex * 100}%)`
+                : `translateY(-${currentIndex * 100}%)`;
+
+            images.style.transform = translateValue;
+            texts.forEach((text, index) => {
+                text.classList.toggle('active', index === currentIndex);
+            });
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideCount;
+            updateSlider();
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
+
+        setInterval(nextSlide, intervalTime);
+
+        // Обновление слайдера при изменении размера окна
+        window.addEventListener('resize', updateSlider);
     </script>
   </body>
 </html>

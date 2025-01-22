@@ -95,11 +95,12 @@ body {
 .hero__buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
 }
 .hero__button {
+  line-height: 1;
   border-radius: 36px;
-  padding: 12px 24px;
+  padding: 22px 16px;
   font-weight: 500;
   font-size: 24px;
   border: 1px solid #fff;
@@ -133,6 +134,7 @@ body {
   background-color: #fff;
 }
 .section-insert__title {
+  line-height: 1.2;
   font-weight: 700;
   font-size: 56px;
   color: #333;
@@ -719,4 +721,406 @@ body {
 
 .footer__policy-link:hover {
   color: #0d6efd;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    display: none;
+  }
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /*СЕКЦИЯ HERO*/
+  .hero {
+    padding: 130px 0px 75px;
+     }
+  .hero__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero__buttons {
+    gap: 10px;
+  }
+  .hero__button {
+    line-height: 1.5;
+    padding: 17px 26px;
+    font-size: 16px;
+  }
+
+  /*СЕКЦИЯ HERO*/
+
+
+  /*СЕКЦИЯ INSERT*/
+  .section-insert {
+    padding: 64px 0px;
+  }
+  .section-insert__content {
+    display: block;
+  }
+  .section-white {
+    border-radius: 16px;
+    margin-top: -16px;
+    margin-bottom: -16px;
+  }
+  .section-insert__title {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .section-insert__description {
+    font-size: 16px;
+    text-align: left;
+  }
+  /*СЕКЦИЯ INSERT*/
+
+  /*СЕКЦИЯ ABOUT*/
+  .section-about__title {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .cards__content {
+    display: block;
+  }
+  .card {
+    padding: 0px 5px 40px;
+  }
+  .card__title {
+    font-size: 20px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+  /*СЕКЦИЯ ABOUT*/
+
+  /*СЕКЦИЯ STEPS*/
+  .section-steps{
+    padding: 64px 0px 64px;
+  }
+  .section-steps__title {
+    line-height: 1.2;
+    font-size: 36px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .section-steps__description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  .card__image {
+    line-height: 1;
+  }
+  .card__text--second {
+    margin-bottom: 0px;
+  }
+  .section-steps__buttons {
+    margin-top: 0px;
+  }
+
+  /*СЕКЦИЯ STEPS*/
+
+  /*СЕКЦИЯ PRISING*/
+  .section-pricing{
+    padding: 13px 0px 58px;
+   }
+
+  .section-pricing__title {
+
+    font-size: 36px;
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .section-pricing__description {
+    font-weight: 400;
+
+    font-size: 16px;
+  }
+  .section-pricing__buttons {
+
+    margin-top: 15px;
+
+    margin-bottom: 45px;
+  }
+
+
+  .pricing-cards__content {
+    display: block;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+
+  .pricing-card__1, .pricing-card__2 {
+    display: none;
+  }
+
+
+
+
+  .pricing-card {
+    border-radius: 15px;
+
+    padding:19px 24px;
+
+  }
+  .pricing-card:hover {
+    box-shadow: 0 4px 20px 10px rgba(41, 97, 171, 0.5);
+  }
+  .pricing-card__title {
+    font-weight: 700;
+    font-size: 10px;
+  }
+  .pricing-card__price {
+
+    font-size: 36px;
+    line-height: 1.2;
+
+    margin-bottom:24px;
+    margin-top: 8px;
+  }
+  .pricing-card__list {
+    margin: auto;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  .pricing-card__item {
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 10px;
+
+    margin-bottom: 10px;
+
+  }
+  .pricing-card__button {
+    margin-top: 20px;
+  }
+
+  .pricing-card__item:before {
+    top: -5px;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+  }
+
+
+  /*СЕКЦИЯ PRISING*/
+  /*СЕКЦИЯ QUESTION*/
+
+  .section-question {
+
+    padding: 55px 0px 55px;
+
+  }
+  .section-question__content {
+    display: block;
+
+  }
+
+  .section-question__title {
+    font-size: 36px;
+  }
+
+  .section-question__text-block {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .section-questiont__description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  .section-question__img-block {
+    text-align: center;
+
+  }
+  .section-question__img {
+    border-radius: 15px;
+    max-width: 335px;
+  }
+  .section-question__buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .section-question__button {
+    border-radius: 27px;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+  .section-question__button:hover {
+    background-color: #fff;
+    color: #2961AB;
+  }
+
+
+  /*FOOTER*/
+  .footer {
+    margin-top: -15px;
+    border-radius: 15px 15px 0 0;
+    padding: 30px 0 30px;
+
+  }
+
+  .footer__container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+
+  .footer__top {
+    display: block;
+
+  }
+
+
+
+  .footer__brand-title {
+
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer__brand-text {
+    font-weight: 400;
+
+  }
+  .footer__buttons {
+    justify-content: flex-start;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+
+
+
+
+
+  .footer__link {
+
+    font-size: 14px;
+
+  }
+
+  .footer__link:hover {
+    color: #0d6efd;
+  }
+
+
+  .footer__social {
+    display: flex;
+
+    margin-top: 32px;
+
+
+    justify-content: space-between;
+  }
+
+  .footer__social li {
+    display: inline-block;
+  }
+
+
+
+  .footer__social-icon {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+  }
+
+  .footer__social-icon:hover {
+    filter: invert(42%) sepia(67%) saturate(658%) hue-rotate(180deg) brightness(85%) contrast(92%);
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer__policy-link {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s;
+  }
+
+  .footer__policy-link:hover {
+    color: #0d6efd;
+  }
+
+  /*Slider*/
+  .slider-texts p {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .slider-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-images {
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slider-images img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .slider-texts {
+    order: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dots {
+    right: 44%;
+    top: 102%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 375px) {
+
 }
