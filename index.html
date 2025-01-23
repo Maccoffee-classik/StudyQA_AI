@@ -182,6 +182,7 @@
                         <img src="img/slide1.jpg" alt="Slide 1">
                         <img src="img/slide2.jpg" alt="Slide 2">
                         <img src="img/slide3.jpg" alt="Slide 3">
+
                     </div>
                     <div class="slider-texts">
                         <div class="active">
@@ -339,7 +340,7 @@
         const texts = document.querySelectorAll('.slider-texts div');
         const dots = document.querySelectorAll('.dot');
         const slideCount = texts.length;
-        const intervalTime = 10000; // 10 seconds
+        const intervalTime = 5000; // 10 seconds
 
         function updateSlider() {
             const isMobile = window.innerWidth <= 1024; // Проверка на мобильный режим

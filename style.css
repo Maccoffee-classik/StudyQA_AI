@@ -1078,6 +1078,7 @@ body {
     font-size: 16px;
   }
   .slider-container {
+    border-radius: 58px;
     flex-direction: column;
     width: 100%;
     height: auto;
@@ -1085,7 +1086,7 @@ body {
 
   .slider-images {
     flex-direction: row;
-    overflow-x: scroll;
+   /* overflow-x: scroll;*/
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
