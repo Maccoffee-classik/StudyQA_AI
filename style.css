@@ -33,6 +33,9 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.header__logo-img-mobile {
+  display: none;
+}
 .header__nav {
   display: flex;
   gap: 20px;
@@ -49,6 +52,9 @@ body {
 .header__buttons {
   display: flex;
   gap: 10px;
+}
+.header__nav-text {
+  display: none;
 }
 .header__button {
   border: 1px solid #fff;
@@ -69,6 +75,10 @@ body {
   background-color: #fff;
   color:  #2961AB;
 }
+.header__burger {
+  display: none;
+}
+
 /*HEADER*/
 
 
@@ -407,6 +417,32 @@ body {
   background: #67B3A5;
   color:  #fff;
 }
+
+
+.pricing-dots {
+  align-items: center;
+  display: none;
+  right: 44%;
+  top: 102%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.pricing-dot {
+  width: 10px;
+  height: 10px;
+  background: #d9d9d9;;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pricing-dot.active {
+  background: #fff;
+  width: 14px;
+  height: 14px;
+}
 /*СЕКЦИЯ PRISING*/
 
 /*СЕКЦИЯ SLIDER*/
@@ -524,6 +560,8 @@ body {
   width: 14px;
   height: 14px;
 }
+
+
 /*СЕКЦИЯ SLIDER*/
 
 
@@ -724,9 +762,151 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .header {
-    display: none;
+/*БУРГЕР И НАВИГАЦИЯ*/
+
+  .header__logo-img-mobile{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 99;
+
+    padding-top: 100px;
+
+
+
+    transition: left 0.3s ease-in-out;
+    margin-left: 0;
+    padding-left: 20px;
   }
+
+
+  .header__logo-img-mobile.active {
+    display:inline-block;
+    left: 0;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  .header {
+    padding: 0;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__burger-icon {
+    border: transparent;
+    background: transparent;
+    display: none;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    content: "";
+
+  }
+
+  path{
+    transition: transform 0.25s;
+  }
+  .active path:nth-of-type(1){
+    transform: rotate(45deg);
+    transform-origin: -1px 3px;
+    fill: rgb(0, 0, 0)
+  }
+  .active path:nth-of-type(2){
+    display: none;
+    fill: rgb(0, 0, 0)
+  }
+  .active path:nth-of-type(3){
+    transform: rotate(-45deg);
+    transform-origin: 0px 13px;
+    fill: rgb(0, 0, 0)
+  }
+
+  .header__burger{
+    display: flex;
+    z-index: 99;
+  }
+  .header__burger-icon {
+
+    display: inline-block;
+  }
+
+
+
+  .header__buttons{
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    padding-top: 200px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    transition: left 0.3s ease-in-out;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+
+  .header__nav-link {
+
+    color: #000000;
+  }
+
+.header__burger.active {
+  position: fixed;
+  right: 20px;
+}
+
+  .header__nav.active {
+    left: 0;
+
+  }
+
+  .header__buttons.active {
+    padding: 100px 20px 0;
+    left: 0;
+
+  }
+
+  .header__buttons.active .header__nav-text {
+
+    width: 100%;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+  }
+  .header__buttons.active .header__button {
+    border: 1px solid #67B3A5;
+    border-radius: 27px;
+    padding: 8px 20px;
+    color: #67B3A5;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .header__buttons.active .header__button:hover {
+    background-color: #67B3A5;
+    color:  #fff;
+  }
+
+
+
+
   .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -825,6 +1005,11 @@ body {
   /*СЕКЦИЯ STEPS*/
 
   /*СЕКЦИЯ PRISING*/
+
+  .pricing-dots {
+    align-items: center;
+    display: flex;
+  }
   .section-pricing{
     padding: 13px 0px 58px;
    }

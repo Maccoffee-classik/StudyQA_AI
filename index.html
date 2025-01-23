@@ -13,6 +13,7 @@
       <div class="container header__inner">
         <a class="header__logo">
             <img src="img/logo.svg" alt="StudyQA" class="header__logo-img">
+            <img src="img/logo_footer.svg" alt="StudyQA" class="header__logo-img-mobile">
         </a>
         <nav class="header__nav">
           <a href="#" class="header__nav-link">Home</a>
@@ -22,9 +23,20 @@
           <a href="#" class="header__nav-link">Contact Us</a>
         </nav>
         <div class="header__buttons">
+            <p class="header__nav-text">Ready to start your journey?</p>
           <a href="#" class="header__button">Log In</a>
           <a href="#" class="header__button header__button--primary">Start For Free</a>
         </div>
+          <button class="header__burger header__burger-icon" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 17 16" >
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"/>
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"/>
+                </svg>
+
+
+          </button>
       </div>
     </header>
   
@@ -145,7 +157,7 @@
                         <button class="pricing-card__button">Get Started</button>
 
                     </div>
-                    <div class="pricing-card">
+                    <div class="pricing-card pricing-card__2">
                         <h3 class="pricing-card__title ">Business Plan</h3>
                         <p class="pricing-card__price">$29/mo</p>
                         <ul class="pricing-card__list">
@@ -158,7 +170,7 @@
                         <button class="pricing-card__button">Get Started</button>
 
                     </div>
-                    <div class="pricing-card pricing-card__2">
+                    <div class="pricing-card pricing-card__3">
                         <h3 class="pricing-card__title ">Premium Plan</h3>
                         <p class="pricing-card__price">$30/mo</p>
                         <ul class="pricing-card__list">
@@ -172,7 +184,13 @@
 
 
                     </div>
+                    <div class="pricing-dots">
+                        <div class="pricing-dot active" ></div>
+                        <div class="pricing-dot" ></div>
+                        <div class="pricing-dot" ></div>
+                    </div>
                 </div>
+
             </div>
         </section>
         <section class="section-slider section-white">
@@ -335,6 +353,23 @@
         setInterval(nextSlide, intervalTime);
 
          */
+        /*БУРГЕР*/
+        document.addEventListener("DOMContentLoaded", () => {
+            const burger = document.querySelector(".header__burger");
+            const nav = document.querySelector(".header__nav");
+            const headerbuttons = document.querySelector(".header__buttons");
+            const headerLogoImg = document.querySelector(".header__logo-img");
+            const headerLogoImgMobile = document.querySelector(".header__logo-img-mobile");
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("active");
+                burger.classList.toggle("active");
+                headerbuttons.classList.toggle("active");
+
+                headerLogoImgMobile.classList.toggle("active");
+            });
+        });
+        /*БУРГЕР*/
+
         let currentIndex = 0;
         const images = document.querySelector('.slider-images');
         const texts = document.querySelectorAll('.slider-texts div');
