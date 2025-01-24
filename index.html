@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <header class="header">
@@ -24,7 +24,7 @@
         </nav>
         <div class="header__buttons">
             <p class="header__nav-text">Ready to start your journey?</p>
-          <a href="#" class="header__button">Log In</a>
+          <a href="registration.html" class="header__button">Log In</a>
           <a href="#" class="header__button header__button--primary">Start For Free</a>
         </div>
           <button class="header__burger header__burger-icon" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -242,7 +242,7 @@
             <div class="section-question__content">
                 <div class="section-question__text-block">
                     <h2 class="section-question__title">Ready to Start <b>Your</b> Journey?</h2>
-                    <p class="section-questiont__description">Join us today and take the first step towards your international education adventure!</p>
+                    <p class="section-question__description">Join us today and take the first step towards your international education adventure!</p>
                     <div class="section-question__buttons">
                         <a href="#" class="section-question__button">Sing up</a>
                         <a href="#" class="section-question__button ">Ask</a>
@@ -308,9 +308,9 @@
                 <div>© 2024 StudyQA. All rights reserved.</div>
                 <div>
                     <a href="#" class="footer__policy-link">Privacy Policy</a>
-                    |
+
                     <a href="#" class="footer__policy-link">Terms of Use</a>
-                    |
+
                     <a href="#" class="footer__policy-link">Cookie Policy</a>
                 </div>
             </div>
@@ -318,41 +318,7 @@
         </div>
     </footer>
     <script>
-        /*
-        let currentIndex = 0;
-        const images = document.querySelector('.slider-images');
-        const texts = document.querySelectorAll('.slider-texts div');
-        const dots = document.querySelectorAll('.dot');
-        const slideCount = texts.length;
-        const intervalTime = 5000; // 5 seconds
 
-        function updateSlider() {
-            images.style.transform = `translateY(-${currentIndex * 100}%)`;
-            texts.forEach((text, index) => {
-                text.classList.toggle('active', index === currentIndex);
-            });
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        function goToSlide(index) {
-            currentIndex = index;
-            updateSlider();
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slideCount;
-            updateSlider();
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => goToSlide(index));
-        });
-
-        setInterval(nextSlide, intervalTime);
-
-         */
         /*БУРГЕР*/
         document.addEventListener("DOMContentLoaded", () => {
             const burger = document.querySelector(".header__burger");
@@ -369,7 +335,7 @@
             });
         });
         /*БУРГЕР*/
-
+        /*слайдер*/
         let currentIndex = 0;
         const images = document.querySelector('.slider-images');
         const texts = document.querySelectorAll('.slider-texts div');
