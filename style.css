@@ -50,6 +50,10 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.header__nav-link:hover {
+  color:  #2961AB;
+  cursor: pointer;
+}
 .header__buttons {
   display: flex;
   gap: 10px;
