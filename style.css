@@ -85,7 +85,8 @@ body {
 
 /*СЕКЦИЯ HERO*/
 .hero {
-  background: url('./img/bg_header.jpg') no-repeat center center;
+  overflow: hidden;
+  background: url('./img/bg_header.jpg') ;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -93,6 +94,7 @@ body {
   position: relative;
 }
 .hero__title {
+  position: relative;
   font-weight: 700;
   font-size: 77px;
   line-height: 120%;
@@ -771,6 +773,7 @@ body {
 /*СТРАНИЦА REGISTRATION*/
 /*СЕКЦИЯ REGISTRATION*/
 .section-registration {
+  overflow: hidden;
   background: #2961AB;
   background-size: cover;
   text-align: center;
@@ -798,10 +801,19 @@ body {
 
 .circle {
   top: 77%;
-  left: 56%;
-  width: 25%;
-  height: 25%;
+  left: 4%;
+  width: 100%;
+  height: 35%;
   animation-delay: 2.5s;
+}
+
+.ellipse-center {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  animation-delay: 2.5s;
+
 }
 
 .ellipse-large {
@@ -1056,6 +1068,324 @@ flex-direction: column;
   padding-right: 0;
 }
 /*Секция REGISTRATION QUESTION*/
+
+/*СТРАНИЦА SERVICES*/
+
+.hero svg {
+  position: absolute;
+  animation: scale-shape 5s infinite alternate ease-in-out;
+}
+/*СЕКЦИЯ INSERT-SERVICES*/
+.section-insert-services {
+  position: relative;
+  padding: 112px 0px;
+  border-radius: 25px;
+  margin-top: -25px;
+  background-color: #fff;
+}
+.section-insert-services__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.section-insert-services__text-block {
+  flex-basis: 50%;
+  padding: 0 15px;
+}
+.section-insert-services__img-block {
+  flex-basis: 50%;
+}
+
+.section-insert-services__img {
+  border-radius: 25px;
+  width: 100%;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+
+}
+.section-insert-services__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000;
+  flex-basis: 50%;
+  text-align: left;
+}
+.section-insert-services__title b {
+  color: #67B3A5;
+}
+.section-insert-services__subtitle {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.section-insert-services__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.section-insert-services__description-wrapper h4 {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 16px;
+
+}
+.section-insert-services__description-wrapper h4 b {
+  color: #67B3A5;
+}
+
+.section-insert-services__description-wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+/*СЕКЦИЯ INSERT-SERVICES*/
+/*СЕКЦИЯ EXPERT-DOCUMENT*/
+.section-expert-document {
+  background: #fff;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+.section-expert-document__block {
+  background: url("img/bg_expert-document.jpg");
+  padding: 116px 127px;
+  border-radius: 25px;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+
+}
+.section-expert-document__title {
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.section-expert-document__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+.section-insert-services-bottom {
+  background: #fff;
+}
+
+/*СЕКЦИЯ INSERT-SERVICES-BOTTOM*/
+
+
+.section-insert-services-bottom {
+  z-index: 99;
+  position: relative;
+  padding: 112px 0;
+  border-radius: 25px;
+  margin-bottom: -25px;
+  background-color: #fff;
+}
+.section-insert-services-bottom__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.section-insert-services-bottom__img {
+  border-radius: 25px;
+  width: 100%;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+
+}
+.section-insert-services-bottom__text-block {
+  flex-basis: 50%;
+  padding: 0 15px;
+}
+.section-insert-services-bottom__img-block {
+  flex-basis: 50%;
+}
+
+
+.section-insert-services-bottom__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000;
+  flex-basis: 50%;
+  text-align: right;
+}
+.section-insert-services-bottom__title b {
+  color: #67B3A5;
+}
+.section-insert-services-bottom__description {
+  color: #000;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: right;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+/*СЕКЦИЯ INSERT-SERVICES-BOTTOM*/
+
+
+/*СЕКЦИЯ PLANS*/
+.section-plans{
+  overflow: hidden;
+  background: #2961AB;
+  background-size: cover;
+  text-align: center;
+  padding: 55px 0px 73px;
+  position: relative;
+  color: #fff;
+}
+
+.section-plans svg {
+  position: absolute;
+  animation: scale-shape 5s infinite alternate ease-in-out;
+}
+.section-plans__sub-title {
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+
+}
+.section-plans__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.section-plans__description {
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+.section-plans__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.section-plans__button {
+  border-radius: 22px 0 0 22px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.section-plans__buttons2  {display: none;
+}
+
+
+
+
+.section-plans__button--secondary {
+  border-radius: 0 22px 22px 0;
+}
+.section-plans__button:hover {
+  background-color:  #fff;
+  color: #67B3A5;
+}
+.plan-cards__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+}
+.plan-card {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: transparent;
+  flex: 1;
+  padding:20px;
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.plan-card:hover {
+  box-shadow: 0 4px 20px 10px rgba(41, 97, 171, 0.5);
+}
+
+.plan-card__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.plan-card__title {
+  flex-basis: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+}
+.plan-card__price {
+  flex-basis: 50%;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+
+  text-align: right;
+}
+.plan-card__description {
+  max-width: 66%;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  margin-top: -10px;
+}
+.plan-card__list__title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+.plan-card__list {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+.plan-card__item {
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+  position: relative;
+}
+
+.plan-card__button {
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 24px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top:auto;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.plan-card__button:hover {
+  background: #67B3A5;
+  color:  #fff;
+}
+
+
 
 
 
@@ -1701,9 +2031,250 @@ flex-direction: column;
     text-align: center;
   }
 
+  /*СТРАНИЦА SERVICES*/
+
+
+  /*СЕКЦИЯ INSERT-SERVICES*/
+  .section-insert-services {
+    border-radius: 15px;
+
+    padding: 48px 0;
+
+  }
+  .section-insert-services__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+  }
+  .section-insert-services__text-block {
+    flex-basis: 100%;
+    padding: 0 ;
+  }
+  .section-insert-services__img-block {
+    display: none;
+  }
+
+
+  .section-insert-services__title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .section-insert-services__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  .section-insert-services__description-wrapper {
+    display: block;
+
+    gap: 0;
+  }
+
+  .section-insert-services__description-wrapper h4 {
+
+    font-size: 18px;
+
+    margin-bottom: 16px;
+    margin-top: 24px;
+
+  }
+
+
+  /*СЕКЦИЯ INSERT-SERVICES*/
+  /*СЕКЦИЯ EXPERT-DOCUMENT*/
+  .section-expert-document {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section-expert-document__block {
+    background: url("img/bg_expert-document.jpg");
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
+
+  }
+  .section-expert-document__title {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .section-expert-document__description {
+    font-size: 14px;
+
+  }
+
+
+  /*СЕКЦИЯ INSERT-SERVICES-BOTTOM*/
+
+
+  .section-insert-services-bottom {
+    z-index: 99;
+    position: relative;
+    padding: 64px 0;
+    border-radius: 15px;
+
+  }
+  .section-insert-services-bottom__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+  }
+
+  .section-insert-services-bottom__text-block {
+    flex-basis: 100%;
+    padding: 0 0px;
+  }
+  .section-insert-services-bottom__img-block {
+    display: none;
+  }
+
+
+  .section-insert-services-bottom__title {
+    font-size: 32px;
+    text-align: left;
+  }
+  .section-insert-services-bottom__title b {
+    color: #67B3A5;
+  }
+  .section-insert-services-bottom__description {
+
+    font-size: 16px;
+
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  /*СЕКЦИЯ INSERT-SERVICES-BOTTOM*/
+
+
+  /*СЕКЦИЯ PLANS*/
+  .section-plans{
+
+    padding: 33px 0px 33px;
+
+  }
+
+
+  .section-plans__sub-title {
+
+    font-size: 16px;
+    position: relative;
+
+  }
+  .section-plans__title {
+
+    font-size: 36px;
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+  }
+  .section-plans__description {
+
+    font-size: 16px;
+
+  }
+
+
+
+
+
+
+  .plan-card__title {
+
+    font-size: 20px;
+
+  }
+  .plan-card__price {
+
+    font-size: 40px;
+
+  }
+  .plan-card__description {
+
+    font-size: 13px;
+
+  }
+  .plan-card__list__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+  }
+  .plan-card__list {
+    margin-bottom: 16px;
+    list-style-type: none;
+  }
+  .plan-card__item {
+
+    font-size: 10px;
+    margin-bottom: 19px;
+
+  }
+  .section-plans__buttons2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    position: relative;
+  }
+  .section-plans__button2 {
+    border-radius: 22px 0 0 22px;
+    padding: 8px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+  .hidden {
+    display: none;
+  }
+  .active-button {
+    background-color: #fff;
+    color: #2961AB;
+  }
+
+  .section-plans__button2.section-plans__button--primary {
+    border-radius: 0;
+  }
+
+  .section-plans__button2.section-plans__button--secondary {
+    border-radius: 0 22px 22px 0;
+  }
+  .plan-cards__content {
+    justify-content: center;
+  }
+  .plan-card {
+    max-width: 500px;
+  }
+  .section-plans__buttons {display: none}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
+
+
+
 
 @media (max-width: 768px) {
 
