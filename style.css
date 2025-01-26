@@ -778,7 +778,7 @@ body {
 /*СЕКЦИЯ REGISTRATION*/
 .section-registration {
   overflow: hidden;
-  background: #2961AB;
+  background: url('./img/bg_header.jpg');
   background-size: cover;
   text-align: center;
   padding: 200px 0px 66px;
