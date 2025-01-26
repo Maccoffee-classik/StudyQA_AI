@@ -953,6 +953,8 @@ body {
 }
 
 .section-registration__warning {
+  position: relative;
+  z-index: 99;
   padding: 7px 19px;
   color: #FFFFFF;
   background: #000;
@@ -1013,6 +1015,7 @@ body {
 }
 
 .section-protect {
+  overflow:hidden;
   background: #2961AB;
   background-size: cover;
   text-align: center;
