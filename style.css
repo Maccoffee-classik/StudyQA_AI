@@ -307,7 +307,7 @@ body {
 
 /*СЕКЦИЯ PRISING*/
 .section-pricing{
-  background: url('./img/bg_pricing.png') no-repeat center center;
+  background: url('./img/bg_pricing.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 55px 0px 73px;
@@ -800,7 +800,7 @@ body {
   width: 30%;
   height: 30%;
   animation-delay: 0s;
-  animation: scale-shape 2s infinite alternate ease-in-out;
+
 }
 
 .circle {

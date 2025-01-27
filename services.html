@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="mini.css">
+  <link rel="stylesheet" href="fonts/fonts-mini.css">
 </head>
 <body>
 <header class="header">
@@ -399,44 +399,10 @@
 
   </div>
 </footer>
-<script>
+<script src="index.js">
 
-/*
-  /*БУРГЕР*/
-  document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.querySelector(".header__burger");
-    const nav = document.querySelector(".header__nav");
-    const headerbuttons = document.querySelector(".header__buttons");
-    const headerLogoImg = document.querySelector(".header__logo-img");
-    const headerLogoImgMobile = document.querySelector(".header__logo-img-mobile");
-    burger.addEventListener("click", () => {
-      nav.classList.toggle("active");
-      burger.classList.toggle("active");
-      headerbuttons.classList.toggle("active");
 
-      headerLogoImgMobile.classList.toggle("active");
-    });
-  });
-  /*БУРГЕР*/
 
-  function showCard(option) {
-    const buttons = document.querySelectorAll('.section-plans__button2');
-    const cards = document.querySelectorAll('.plan-card');
-    buttons.forEach((btn, index) => {
-      if (index === option - 1) {
-        btn.classList.add('active-button');
-      } else {
-        btn.classList.remove('active-button');
-      }
-    });
-    cards.forEach((card, index) => {
-      if (index === option - 1) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  }
   </script>
 </body>
 </html>
