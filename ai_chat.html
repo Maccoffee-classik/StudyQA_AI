@@ -6,7 +6,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/fonts-mini.css">
-    <script src="index.js">    </script>
+    <script src="index.js"></script>
 </head>
 <body>
 <header class="header">
@@ -17,7 +17,7 @@
         </a>
         <nav class="header__nav">
             <a href="index.html" class="header__nav-link">Home</a>
-            <a href="ai_chat.html" class="header__nav-link">AI Chat</a>
+            <a href="#" class="header__nav-link">AI Chat</a>
             <a href="#" class="header__nav-link">About Us</a>
             <a href="services.html" class="header__nav-link">Services</a>
             <a href="#" class="header__nav-link">Contact Us</a>
@@ -39,7 +39,7 @@
         </button>
     </div>
 </header>
-<section class="section-registration">
+<section class="section-registration section-registration__section-ai-chat">
     <!-- Уменьшенный эллипс -->
     <svg class="ellipse-small"  viewBox="0 0 761 447" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_19_656)">
@@ -109,125 +109,89 @@
         <div class="section-registration__content">
 
             <div class="section-registration__text-block">
-                <h2 class="section-registration__title"> <b>Create</b>  Your StudyQA Account</h2>
-                <p class="section-registration__description">Unlock personalized program recommendations and expert support tailored just for you.</p>
+                <h2 class="section-registration__title"> Get Instant Answers
+                    with <b>StudyQA AI</b></h2>
+                <p class="section-registration__description">Need help choosing an educational program abroad? Our AI Chat is here to provide instant support and guidance tailored to your needs.</p>
                 <form class="registration__form">
-                    <input type="email" class="registration__input" placeholder="Your email address" aria-label="email address" />
-                    <button type="submit" class="registration__button" aria-label="email address">
-                        Create Account
+                    <input type="email" class="registration__input" placeholder="Ask me anything" aria-label="chat" />
+                    <button type="submit" class="registration__button" aria-label="chat">
+                        <img src="./img/arrow__button-icon.svg" alt="Иконка стрелки" class="section-ai-chat__button-icon" />
+                        <span class="section-ai-chat__button-text">Click</span>
                     </button>
 
                 </form>
 
                 <p class="registration__policy">
-                    By clicking Create Account, you agree to our Terms and Conditions.
+                    By clicking “Arrow”, you agree to our Terms and Conditions.
                 </p>
 
             </div>
-            <div class="section-registration__img-block">
-                <img src="img/registration_img.jpg" class="section-registration__img" alt="">
-            </div>
+
 
         </div>
-        <p class="section-registration__warning">This email address is already taken</p>
+        <p class="section-registration__warning">I can't provide answers to topics that are prohibited by the rules of use</p>
     </div>
 </section>
-<section class="section-insert section-white">
+<section class="section-pricing section-pricing__section-white">
     <div class="container">
-        <div class="section-insert__content">
-            <h2 class="section-insert__title"> <b>Join </b> StudyQA Today</h2>
-            <p class="section-insert__description section-insert__description--text-left">Registering with StudyQA AI opens the door to tailored educational program recommendations that match your interests. Enjoy dedicated support throughout your journey to studying abroad.</p>
+
+        <h2 class="section-pricing__title">StudyQA AI <b>Pricing</b> Plans</h2>
+        <p class="section-pricing__description">Choose a plan that suits your needs and budget.</p>
+        <div class="section-pricing__buttons">
+
+            <a href="#" class="section-pricing__button header__button--primary">Get Started</a>
+            <a href="#" class="section-pricing__button section-pricing__button--secondary ">Learn More</a>
+        </div>
+        <div class="pricing-cards__content">
+            <div class="pricing-card pricing-card__1">
+                <h3 class="pricing-card__title ">Basic Plan</h3>
+                <p class="pricing-card__price">$19/mo</p>
+                <ul class="pricing-card__list">
+                    <li class="pricing-card__item">Program selection assistance</li>
+                    <li class="pricing-card__item">24/7 support available</li>
+                    <li class="pricing-card__item">Document preparation help</li>
+
+                </ul>
+                <button class="pricing-card__button">Get Started</button>
+
+            </div>
+            <div class="pricing-card pricing-card__2">
+                <h3 class="pricing-card__title ">Business Plan</h3>
+                <p class="pricing-card__price"><b>$29</b>/mo</p>
+                <ul class="pricing-card__list">
+                    <li class="pricing-card__item">20 <b>free</b> questions monthly</li>
+                    <li class="pricing-card__item">Priority chat support</li>
+                    <li class="pricing-card__item">Application <b>guidance</b></li>
+                    <li class="pricing-card__item">Admission advice</li>
+                    <li class="pricing-card__item"><b>Expert</b> insights</li>
+                </ul>
+                <button class="pricing-card__button">Get Started</button>
+
+            </div>
+            <div class="pricing-card pricing-card__3">
+                <h3 class="pricing-card__title ">Premium Plan</h3>
+                <p class="pricing-card__price"><span>$30</span>/mo</p>
+                <ul class="pricing-card__list">
+                    <li class="pricing-card__item">20 <span>free</span> questions monthly</li>
+                    <li class="pricing-card__item">Priority chat support</li>
+                    <li class="pricing-card__item">Application <span>guidance</span></li>
+                    <li class="pricing-card__item">Admission advice</li>
+                    <li class="pricing-card__item"><span>Expert</span> insights</li>
+                </ul>
+                <button class="pricing-card__button">Get Started</button>
+
+
+            </div>
+            <div class="pricing-dots">
+                <div class="pricing-dot active" onclick="goToSlide(0)"></div>
+                <div class="pricing-dot" onclick="goToSlide(1)"></div>
+                <div class="pricing-dot" onclick="goToSlide(2)"></div>
+            </div>
         </div>
 
     </div>
 </section>
-<section class="section-protect">
 
-
-    <!-- Большой эллипс -->
-    <svg class="section-protect-ellipse-large" width="961" height="647" viewBox="0 0 961 647" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_f_19_656)">
-            <ellipse cx="367.333" cy="159.811" rx="293.333" ry="186.811" fill="#67B3A5" />
-        </g>
-        <defs>
-            <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_19_656" />
-            </filter>
-        </defs>
-    </svg>
-    <svg class="section-protect-ellipse-large-top" width="961" height="647" viewBox="0 0 961 647" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_f_19_656)">
-            <ellipse cx="367.333" cy="159.811" rx="293.333" ry="186.811" fill="#67B3A5" />
-        </g>
-        <defs>
-            <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_19_656" />
-            </filter>
-        </defs>
-    </svg>
-    <svg class="section-protect-ellipse-large-bot" width="961" height="647" viewBox="0 0 961 647" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_f_19_656)">
-            <ellipse cx="367.333" cy="459.811" rx="293.333" ry="186.811" fill="#67B3A5" />
-        </g>
-        <defs>
-            <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_19_656" />
-            </filter>
-        </defs>
-    </svg>
-    <div class="container">
-        <div class="section-protect__content">
-            <div class="section-protect__img-block">
-                <svg  viewBox="0 0 370 408" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_93_845)">
-                        <path d="M137.202 193.241L168.931 223.167C170.898 225.022 173.982 224.978 175.895 223.067L229.269 169.766M184.213 338C149.182 338 50.3373 256.895 74.04 119.627C74.3251 117.975 75.4428 116.553 76.9835 115.893L182.263 70.8346C183.51 70.3012 184.919 70.2967 186.169 70.8222L293.336 115.884C294.914 116.547 296.052 118.007 296.32 119.697C318.059 256.922 219.239 338 184.213 338Z" stroke="#67B3A5" stroke-width="20" stroke-linecap="round" />
-                    </g>
-                    <defs>
-                        <filter id="filter0_d_93_845" x="0.410217" y="0.431396" width="369.002" height="407.569" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feMorphology radius="10" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_93_845" />
-                            <feOffset />
-                            <feGaussianBlur stdDeviation="25" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_93_845" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_93_845" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-            </div>
-            <div class="section-protect__text-block">
-                <h2 class="section-protect__title">How We <b>Protect  </b>Your Data?</h2>
-                <p class="section-protect__description">Your data is our top priority. We implement state-of-the-art encryption technologies to ensure all your sensitive information is securely transmitted and stored. Our dedicated servers are protected with advanced firewalls and undergo regular security audits to prevent unauthorized access. We comply with global data protection regulations, giving you peace of mind that your information is handled responsibly and securely.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="registration section-question">
-    <div class="container">
-        <div class="container section-question__content section-question__content--blue-bg">
-            <div class="section-question__text-block ">
-                <h2 class="section-question__title">Already a member? <br><b>Log in</b> </h2>
-                <p class="section-question__description">Access your account to explore more educational opportunities tailored just for you.</p>
-                <div class="section-question__buttons">
-                    <a href="#" class="section-question__button">Log In</a>
-                    <a href="#" class="section-question__button ">Sing up</a>
-                </div>
-            </div>
-            <div class="section-question__img-block">
-                <img src="img/registration_question_img.jpg" class="section-question__img" alt="">
-            </div>
-
-
-        </div>
-    </div>
-</section>
 <footer class="footer">
     <div class=" container footer__container">
 

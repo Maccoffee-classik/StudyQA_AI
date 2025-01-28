@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
-  <link rel="stylesheet" href="mini.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts/fonts-mini.css">
+  <script src="index.js">  </script>
 </head>
 <body>
 <header class="header">
@@ -15,8 +16,8 @@
       <img src="img/logo_footer.svg" alt="StudyQA" class="header__logo-img-mobile">
     </a>
     <nav class="header__nav">
-      <a href="#" class="header__nav-link">Home</a>
-      <a href="#" class="header__nav-link">AI Chat</a>
+      <a href="index.js" class="header__nav-link">Home</a>
+      <a href="ai_chat.html" class="header__nav-link">AI Chat</a>
       <a href="#" class="header__nav-link">About Us</a>
       <a href="#" class="header__nav-link">Services</a>
       <a href="#" class="header__nav-link">Contact Us</a>
@@ -399,10 +400,27 @@
 
   </div>
 </footer>
-<script src="index.js">
+<script>    function showCard(option) {
+  const buttons = document.querySelectorAll('.section-plans__button2');
+  const cards = document.querySelectorAll('.plan-card');
+  buttons.forEach((btn, index) => {
+    if (index === option - 1) {
+      btn.classList.add('active-button');
+    } else {
+      btn.classList.remove('active-button');
+    }
+  });
+  cards.forEach((card, index) => {
+    if (index === option - 1) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
+</script>
 
 
-
-  </script>
 </body>
 </html>
