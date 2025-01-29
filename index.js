@@ -108,6 +108,17 @@ document.addEventListener("DOMContentLoaded", () => {
     initPricingSlider();
 
 
+        const faqItems = document.querySelectorAll(".faq-content-li");
+
+        faqItems.forEach((item) => {
+            const title = item.querySelector(".faq-title");
+
+            title.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+
+
 
 
 });
