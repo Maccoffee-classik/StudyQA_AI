@@ -564,14 +564,14 @@
         goToSlide(currentSlide);
     }
 
-    let slideInterval = setInterval(autoSlide, 5000);
+    let slideInterval = setInterval(autoSlide, 10000);
 
     // Навешиваем события на точки
     dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
             clearInterval(slideInterval); // Останавливаем автоматическую прокрутку при клике
             goToSlide(index);
-            slideInterval = setInterval(autoSlide, 5000); // Перезапускаем автосмену
+            slideInterval = setInterval(autoSlide, 10000); // Перезапускаем автосмену
         });
     });
 
