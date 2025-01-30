@@ -1781,6 +1781,159 @@ flex-direction: column;
   background: #67B3A5;
 }
 
+/*СЕКЦИЯ SCROLL-BAR*/
+.section-scroll-bar__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+}
+.section-scroll-bar__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.section-scroll-bar {
+  z-index: 11;
+  background: #FFFFFF;
+  background-size: cover;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  color: #000;
+  border-radius: 25px;
+  margin-top: -25px;
+}
+
+.scroll-bar-wrapper {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-bar-card {
+  margin-bottom: 35px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
+  background: #FFF;
+  border: 1px solid #67B3A5;
+  border-radius: 25px;
+  max-width: 253px;
+  padding-bottom: 30px;
+
+}
+
+.scroll-bar__img {
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+}
+
+.scroll-bar-card__img-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.scroll-bar-card__title-group {
+  display: flex;
+  gap: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.scroll-bar-card__title {
+
+  text-align: left;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+}
+.scroll-bar-card__subtitle {
+  text-align: left;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+}
+.scroll-bar-card__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.webflow-ico-black {
+  width: 59px;
+  filter: invert(1);
+}
+
+.scroll-bar-cards__dots {
+  display: none;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 102%;
+}
+
+.scroll-bar-cards__dot {
+  width: 10px;
+  height: 10px;
+  background: #94b0d5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.scroll-bar-cards__dot.active {
+  background: #2961AB;
+  width: 14px;
+  height: 14px;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;}
+
+
+
+.scroll-bar-wrapper::-webkit-scrollbar {
+  height: 15px; /* Высота полосы прокрутки */
+}
+
+.scroll-bar-wrapper::-webkit-scrollbar-thumb {
+  background: #2961AB; /* Цвет полосы прокрутки */
+  border-radius: 10px; /* Скругление */
+  width: 100px; /* Минимальная ширина ползунка */
+  min-width: 100px; /* Минимальная длина для ползунка */
+  max-width: 100px;
+}
+
+.scroll-bar-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #67B3A5; /* Цвет при наведении */
+}
+
+.scroll-bar-wrapper::-webkit-scrollbar-track {
+  background: #f3f3f3; /* Цвет дорожки */
+  border-radius: 10px; /* Скругление дорожки */
+  margin: 0 30px; /* Отступы дорожки от краёв контейнера */
+}
+
+
+
 @media (max-width: 1024px) {
 /*БУРГЕР И НАВИГАЦИЯ*/
 
@@ -2724,6 +2877,16 @@ flex-direction: column;
     margin-bottom: 24px;
   }
 
+  /*СЕКЦИЯ SCROLL-BAR*/
+  .section-scroll-bar {
+    margin-bottom: 80px;
+
+    padding: 50px 0px 0px;
+
+  }
+
+
+
 }
 
 
@@ -2748,6 +2911,50 @@ flex-direction: column;
   .registration__form {
     width: 100%;
   }
+
+  .scroll-bar-cards__dots {
+    display: flex;
+  }
+  .section-scroll-bar__title {
+    display: none;
+  }
+  .section-scroll-bar__subtitle {
+    display: none;
+  }
+
+
+  .scroll-bar-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 0;
+  }
+
+  .scroll-bar-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+  }
+
+
+  .scroll-bar-cards__dot {
+    width: 10px;
+    height: 10px;
+    background: #94b0d5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .scroll-bar-cards__dot.active {
+    width: 14px;
+    height: 14px;
+    background: #2961AB;
+  }
+
+
+
 }
 /*
 @media (max-width: 375px) {

@@ -104,6 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
         pricingDots.forEach((dot, index) => dot.addEventListener("click", () => goToPricingSlide(index)));
     }
 
+
+
+
     window.addEventListener("resize", initPricingSlider);
     initPricingSlider();
 
@@ -117,6 +120,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.classList.toggle("active");
             });
         });
+
+
+
+
+
 
 
 
