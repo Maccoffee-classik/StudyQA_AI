@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="mini.css.css">
+    <link rel="stylesheet" href="fonts/fonts-mini.css">
+    <script src="index.js">    </script>
+</head>
+<body>
+<section class="section-chat">
+
+    <div class="chat-container">
+        <a href="#" class="chat__logo">
+            <p class="chat__logo-text">StudyQA AI</p>
+
+        </a>
+        <button class=" burger-menu  header-chat__burger-icon" type="button" onclick="toggleSidebar()">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 17 16" >
+                <path fill-rule="evenodd"  fill="rgb(103, 179, 165)" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
+                <path fill-rule="evenodd"  fill="rgb(103, 179, 165)" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"/>
+                <path fill-rule="evenodd"  fill="rgb(103, 179, 165)" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"/>
+            </svg>
+
+
+        </button>
+
+
+
+        <div class="sidebar">
+            <!-- Уменьшенный эллипс -->
+            <svg class="ellipse-small-chat"  viewBox="0 0 761 447" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_19_656)">
+                    <ellipse cx="367.333" cy="190.811" rx="150" ry="95" fill="#67B3A5" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_19_656" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- Уменьшенный эллипс -->
+            <!-- Круг -->
+            <svg class="circle-chat"  viewBox="0 0 35 314" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_19_604)">
+                    <circle cx="74.3114" cy="250.311" r="75" fill="#67B3A5" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_19_604" x="-176" y="0" width="500.623" height="500.623" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_19_604" />
+                    </filter>
+                </defs>
+            </svg>
+
+            <!-- Большой эллипс -->
+            <svg class="ellipse-large-chat"  viewBox="0 0 961 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_19_656)">
+                    <ellipse cx="367.333" cy="159.811" rx="293.333" ry="186.811" fill="#67B3A5" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_19_656" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg class="ellipse-large-top-chat"  viewBox="0 0 961 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_19_656)">
+                    <ellipse cx="367.333" cy="159.811" rx="293.333" ry="186.811" fill="#67B3A5" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_19_656" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg class="ellipse-large-bot-chat"  viewBox="0 0 961 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_19_656)">
+                    <ellipse cx="367.333" cy="359.811" rx="293.333" ry="186.811" fill="#67B3A5" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_19_656" x="-226" y="-327" width="1186.67" height="973.621" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_19_656" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="header-chat">
+                <h3>Ready to start your journey?</h3>
+                <div class="login-chat-buttons">
+                    <button class="login-chat-button" >Log In</button>
+                    <button class="login-chat-button" >Sign Up</button>
+                </div>
+            </div>
+            <div class="sidebar-buttons">
+                <button class="sidebar-button">StudyQA</button>
+                <button class="sidebar-button">My limits</button>
+                <button class="sidebar-button">Plan upgrade</button>
+                <button class="button-new-chat">New chat</button>
+            </div>
+            <div class="footer-chat">
+                <p>StudyQA AI 1.0</p>
+            </div>
+        </div>
+        <div class="chat-content">
+            <p class="chat-content__bg-message" >let StudyQA AI help you</p>
+            <p class="message-user">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="message-sender">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+            <div class="user-input-chat">
+                <input class="user-input" type="text" placeholder="Ask me anything">
+                <button type="button" class="user-input-chat__button" aria-label="chat">
+                    <img src="./img/arrow-chat-icon.svg" alt="Иконка стрелки" class="user-input-chat__button-icon" />
+
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function toggleSidebar() {
+
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('hidden');
+        const burger_chat = document.querySelector('.burger-menu');
+        burger_chat.classList.toggle('active');
+        const logo_text = document.querySelector('.chat__logo-text');
+        logo_text.classList.toggle('active');
+
+    }
+</script>
+</body>
+
+</html>
