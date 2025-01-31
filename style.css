@@ -3300,7 +3300,9 @@ flex-direction: column;
   background: #fff;
   left: 0;
 }
-
+.chat-content {
+  padding: 0 20px;
+}
 
 }
 
