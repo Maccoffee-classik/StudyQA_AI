@@ -112,14 +112,19 @@
                 <p>StudyQA AI 1.0</p>
             </div>
         </div>
-        <div class="chat-content">
-            <p class="chat-content__bg-message" >let StudyQA AI help you</p>
-            <p class="message-sender">User Q</p>
-            <p class="message-user">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <div  class="chat-content">
+            <p id="chatBgMessage" class="chat-content__bg-message" >let StudyQA AI help you</p>
+            <div id="chat" class="message-chat-container">
+                <p class="message-sender">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="message-sender">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-            <div class="user-input-chat">
-                <input class="user-input" type="text" placeholder="Ask me anything">
-                <button type="button" class="user-input-chat__button" aria-label="chat">
+                    <p class="message-user">User Q</p>
+                     <p class="message-sender">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div id="inputContainer" class="user-input-chat">
+
+                <input id="chatInput" class="user-input" type="text" placeholder="Ask me anything">
+                <button  onclick="moveInput()" type="button" class="user-input-chat__button" aria-label="chat">
                     <img src="./img/arrow-chat-icon.svg" alt="Иконка стрелки" class="user-input-chat__button-icon" />
 
                 </button>
@@ -137,6 +142,11 @@
         const logo_text = document.querySelector('.chat__logo-text');
         logo_text.classList.toggle('active');
 
+    }
+    function moveInput() {
+        document.getElementById("inputContainer").classList.add("active");
+        document.getElementById("chat").style.display = "block";
+        document.getElementById("chatBgMessage").style.display = "none";
     }
 </script>
 </body>
